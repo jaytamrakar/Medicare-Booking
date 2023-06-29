@@ -11,8 +11,8 @@ export default {
         yellowColor: "#FEB60D",
         purpleColor: "#9771FF",
         irisBlueColor: "#01B5C5",
-        headingCotor: "#181A1E",
-        textCotor: "#4E545F",
+        headingColor: "#181A1E",
+        textColor: "#4E545F",
       },
 
       boxShadow: {
@@ -21,5 +21,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
