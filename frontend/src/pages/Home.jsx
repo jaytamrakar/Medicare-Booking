@@ -15,6 +15,7 @@ import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import DoctorList from "../components/Doctors/DoctorList";
 import FaqList from "../components/Faq/FaqList";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 const Home = () => (
   <>
@@ -93,10 +94,10 @@ const Home = () => (
             Providing the best medical services
           </h2>
           {/* TODO: This p2 gives worning solve it */}
-          <p2 className="text__para">
+          <p className="text__para">
             World class care for everyone. Our health care system offers
             unmatched services, expert heath care.
-          </p2>
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px] ">
           <div className="py-[30px] px-5">
@@ -270,6 +271,21 @@ const Home = () => (
             <FaqList />
           </div>
         </div>
+      </div>
+    </section>
+
+    {/* testimonial section */}
+
+    <section>
+      <div className="container">
+        <div className="xl:w-[470px] mx-auto ">
+          <h2 className="heading text-center">What our paitients say</h2>
+          <p className="text__para text-center">
+            World class care for everyone. Our health system offfers unmatched,
+            expert health care.
+          </p>
+        </div>
+        <Testimonial />
       </div>
     </section>
   </>
