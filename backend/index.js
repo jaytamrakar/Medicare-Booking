@@ -4,6 +4,8 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import authRoute from "./routes/auth.js";
+import userRoute from "./routes/user.js";
+import doctorRoute from "./routes/doctor.js";
 
 dotenv.config();
 
@@ -40,6 +42,8 @@ app.use(cors(corsOptions));
 
 // routes
 app.use("/api/v1/auth", authRoute);
+app.use("/api/v1/users", userRoute);
+app.use("/api/v1/doctors", doctorRoute);
 
 app.listen(port, () => {
   connectDB();
